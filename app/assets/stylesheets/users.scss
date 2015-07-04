@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 * {
-	margin: 0px !important;
-	padding: 0px !important;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -32,10 +32,13 @@
 	text-transform: uppercase;
 }
 
+#basicModalThree {
+	color: black;
+}
+
 #title {
 	margin-top: 200px;
 	left: 30%;
-	top: 30%;
 	position: absolute;
 	z-index: 5;
 	color: white;
@@ -88,12 +91,12 @@
 
 #fourServices {
 	position: relative;
-	top: 20%;
-	left: 10%;
+	margin-top: 80px;
+	margin-left: 60px;
 }
 
 #testimonials {
-	height: 180px;
+	height: 550px;
 	width: 100%;
 	background-color: #94C0E1;
 }
@@ -101,6 +104,10 @@
 #testimonialsTitle {
 	left: 35%;
 	position: absolute;
+}
+
+#fourTestimonials {
+	margin-top: 60px;
 }
 
 #picOne {
