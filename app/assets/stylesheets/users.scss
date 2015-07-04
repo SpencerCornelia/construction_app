@@ -1,0 +1,121 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+	padding: 0;
+	margin: auto;
+}
+
+@media (min-width: 846px) {
+	#basicModalOne {
+		position: absolute;
+		left: 30%;
+		bottom: 30%;
+		background-color: transparent;
+		width: 200px;
+		color: white;
+		border-color: white;
+		text-transform: uppercase;
+	}
+
+	#basicModalTwo {
+		position: absolute;
+		left: 50%;
+		bottom: 30%;
+		background-color: transparent;
+		width: 200px;
+		color: white;
+		border-color: white;
+		margin-left: 30px;
+		text-transform: uppercase;
+	}
+
+	#title {
+		margin-top: 200px;
+		margin-left: 400px;
+		position: absolute;
+		z-index: 5;
+		color: white;
+	    -webkit-text-stroke-width: 2px;
+   		-webkit-text-stroke-color: black;
+	}
+}
+
+@media (max-width: 846px) {
+	#basicModalOne {
+		position: absolute;
+		left: 30%;
+		bottom: 30%;
+		background-color: transparent;
+		width: 200px;
+		color: white;
+		border-color: white;
+		text-transform: uppercase;
+		display: block;
+	}
+
+	#basicModalTwo {
+		position: absolute;
+		background-color: transparent;
+		width: 200px;
+		color: white;
+		border-color: white;
+		margin-left: 30px;
+		text-transform: uppercase;
+	}
+}
+
+#heroImage {
+	background-image: url("http://www.hdwallpapersinn.com/wp-content/uploads/2014/08/hd-images-palm-tree-wallpaper1.jpg");
+	height: 680px;
+	margin-left: -100px;
+	opacity: 0.85;
+	position: relative;
+}
+
+#services {
+	height: 350px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#servicesOffered {
+	margin-left: 450px;
+}
+
+#fourServices {
+	margin-top: 10px;	
+	margin-left: 70px;
+}
+
+#testimonialTitle {
+	margin-left: 440px;
+}
+
+#testimonials {
+	margin-left: -15px;
+	height: 350px;
+	width: 100%;
+	background-color: #94C0E1
+}
+
+#picOne {
+	margin-left: 40px;
+}
+
+#firstColumn {
+	margin-top: 20px;
+}
+
+#secondColumn {
+	margin-top: 60px;
+}
+
+#reviews {
+	margin-top: -10px;
+}
+
+
+
+
