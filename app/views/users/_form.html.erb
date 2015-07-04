@@ -3,50 +3,51 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-            <h2 class="modal-title" id="myModalLabel">Sign Up</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+                 <h2 class="modal-title" id="myModalLabel">Sign Up</h2>
             </div>
             <div class="modal-body">
-                <%= form_for @user do |f| %>
-			<div>
-				<%= f.text_field :username, placeholder: "Username" %>
-			</div>
-			<div>
-				<%= f.password_field :password, placeholder: "Password" %>
-			</div>	
-			<div>
-				<%= f.password_field :password_confirmation, placeholder: "Confirm Password" %>
-			</div>
-			<div class="modal-footer">
-            <%= f.submit "Sign Up" %>
+                    <%= form_for @user do |f| %>
+    			<div>
+    				<%= f.text_field :username, placeholder: "Username" %>
+    			</div>
+    			<div>
+    				<%= f.password_field :password, placeholder: "Password" %>
+    			</div>	
+    			<div>
+    				<%= f.password_field :password_confirmation, placeholder: "Confirm Password" %>
+    			</div>
+    			<div class="modal-footer">
+                    <%= f.submit "Sign Up" %>
+                </div>
+                    <% end %>
             </div>
-            <% end %>
         </div>
     </div>
-  </div>
 </div>
 
 <!-- Modal for Login -->
+<!-- Delete this if modal works again -->
 <div class="modal fade" id="basicModalTwo" tabindex="-1" role="dialog" aria-labelledby="basicModalTwo" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-            <h2 class="modal-title" id="myModalLabel">Login</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+                <h2 class="modal-title" id="myModalLabel">Login</h2>
             </div>
             <div class="modal-body">
-                <%= form_for @user, url: "/sessions", method: "post" do |f| %>
-			<div>
-				<%= f.text_field :username, placeholder: "Username" %>
-			</div>
-			<div>
-				<%= f.password_field :password, placeholder: "Password" %>
-			</div>	
-			<div class="modal-footer">
-            <%= f.submit "Login" %>
+                    <%= form_for @user, url: "/sessions", method: "post" do |f| %>
+                <div>
+                    <%= f.text_field :username, placeholder: "Username" %>
+                </div>
+                <div>
+                    <%= f.password_field :password, placeholder: "Password" %>
+                </div>  
+                <div class="modal-footer">
+                   <%= f.submit "Login" %>
+                </div>
+                   <% end %>
             </div>
-            <% end %>
         </div>
     </div>
-  </div>
 </div>

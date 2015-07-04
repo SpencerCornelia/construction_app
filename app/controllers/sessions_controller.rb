@@ -7,8 +7,12 @@ class SessionsController < ApplicationController
 	def create
 		user_params = params.require(:user).permit(:username, :password)
 		@user = User.confirm(user_params)
-		login(@user)
-		redirect_to "/users/#{@user.id}"
+		if @user
+			login(@user)
+			redirect_to "/users/#{@user.id}"
+		else
+			redirect_to "/"
+		end
 	end
 
 	def show

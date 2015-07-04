@@ -2,74 +2,75 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-html {
-	padding: 0;
-	margin: auto;
+* {
+	margin: 0px !important;
+	padding: 0px !important;
 }
 
-@media (min-width: 846px) {
-	#basicModalOne {
-		position: absolute;
-		left: 30%;
-		bottom: 30%;
-		background-color: transparent;
-		width: 200px;
-		color: white;
-		border-color: white;
-		text-transform: uppercase;
-	}
 
-	#basicModalTwo {
-		position: absolute;
-		left: 50%;
-		bottom: 30%;
-		background-color: transparent;
-		width: 200px;
-		color: white;
-		border-color: white;
-		margin-left: 30px;
-		text-transform: uppercase;
-	}
-
-	#title {
-		margin-top: 200px;
-		margin-left: 400px;
-		position: absolute;
-		z-index: 5;
-		color: white;
-	    -webkit-text-stroke-width: 2px;
-   		-webkit-text-stroke-color: black;
-	}
+// @media (min-width: 846px) {
+#basicModalOne {
+	position: absolute;
+	left: 30%;
+	bottom: 30%;
+	background-color: transparent;
+	width: 200px;
+	color: white;
+	border-color: white;
+	text-transform: uppercase;
 }
 
-@media (max-width: 846px) {
-	#basicModalOne {
-		position: absolute;
-		left: 30%;
-		bottom: 30%;
-		background-color: transparent;
-		width: 200px;
-		color: white;
-		border-color: white;
-		text-transform: uppercase;
-		display: block;
-	}
-
-	#basicModalTwo {
-		position: absolute;
-		background-color: transparent;
-		width: 200px;
-		color: white;
-		border-color: white;
-		margin-left: 30px;
-		text-transform: uppercase;
-	}
+#basicModalTwo {
+	position: absolute;
+	left: 50%;
+	bottom: 30%;
+	background-color: transparent;
+	width: 200px;
+	color: white;
+	border-color: white;
+	margin-left: 30px;
+	text-transform: uppercase;
 }
+
+#title {
+	margin-top: 200px;
+	left: 30%;
+	top: 30%;
+	position: absolute;
+	z-index: 5;
+	color: white;
+    -webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+}
+// }
+
+// @media (max-width: 846px) {
+// 	#basicModalOne {
+// 		position: absolute;
+// 		left: 30%;
+// 		bottom: 30%;
+// 		background-color: transparent;
+// 		width: 200px;
+// 		color: white;
+// 		border-color: white;
+// 		text-transform: uppercase;
+// 		display: block;
+// 	}
+
+// 	#basicModalTwo {
+// 		position: absolute;
+// 		background-color: transparent;
+// 		width: 200px;
+// 		color: white;
+// 		border-color: white;
+// 		margin-left: 30px;
+// 		text-transform: uppercase;
+// 	}
+// }
 
 #heroImage {
 	background-image: url("http://www.hdwallpapersinn.com/wp-content/uploads/2014/08/hd-images-palm-tree-wallpaper1.jpg");
 	height: 680px;
-	margin-left: -100px;
 	opacity: 0.85;
 	position: relative;
 }
@@ -81,23 +82,25 @@ html {
 }
 
 #servicesOffered {
-	margin-left: 450px;
+	left: 36%;
+	position: absolute;
 }
 
 #fourServices {
-	margin-top: 10px;	
-	margin-left: 70px;
-}
-
-#testimonialTitle {
-	margin-left: 440px;
+	position: relative;
+	top: 20%;
+	left: 10%;
 }
 
 #testimonials {
-	margin-left: -15px;
-	height: 350px;
+	height: 180px;
 	width: 100%;
-	background-color: #94C0E1
+	background-color: #94C0E1;
+}
+
+#testimonialsTitle {
+	left: 35%;
+	position: absolute;
 }
 
 #picOne {
@@ -113,9 +116,15 @@ html {
 }
 
 #reviews {
-	margin-top: -10px;
+
 }
 
+#iconRow {
+	left: 10%;
+}
 
+.contactUs {
+	height: 200px;
+}
 
 
