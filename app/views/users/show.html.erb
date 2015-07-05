@@ -2,7 +2,7 @@
 <%= render partial: "users/navbar" %>	
 
 <!-- Current Jobs -->
-<div class="container">
+<div class="container" id="currentJobsDiv">
 	<div class="row">
 		<div class="col-xs-8 col-xs-offset-2">
 			<div class="panel panel-default">
@@ -19,8 +19,8 @@
 							   </TR>
 							   <TR>
 							      <TD id="vegasStrip">Las Vegas Strip</TD>
-							      <TD><button>Time In</button></TD>
-							      <TD><button>Time Out</button></TD>
+							      <TD><button id="timeInOne">Time In</button></TD>
+							      <TD><button id="timeOutOne">Time Out</button></TD>
 							      <TD><button id="imageBtn">Image</button></TD>
 							   </TR>
 							</TABLE>
@@ -32,18 +32,24 @@
 							      <TH>Time Out<TH>
 							   </TR>
 							   <TR>
-							      <TD>Wednesday July 1, 2015</TD>
-							      <TD>6:49am</TD>
-							      <TD>7:13pm</TD>
+							      <TD class="clearTime">Wed Jul 1 2015</TD>
+							      <TD class="clearTime">6:49am</TD>
+							      <TD class="clearTime">7:13pm</TD>
 							   </TR>
 							   <TR>
-							      <TD>Thursday July 2, 2015</TD>
-							      <TD>7:05am</TD>
-							      <TD>6:29pm</TD>
-							   </TR>							   
+							      <TD class="clearTime">Thur July 2 2015</TD>
+							      <TD class="clearTime">7:05am</TD>
+							      <TD class="clearTime">6:29pm</TD>
+							   </TR>
+							   <TR>
+							      <TD id="currentDate"></TD>
+							      <TD id="timeIn"></TD>
+							      <TD id="timeOut"></TD>
+							   </TR>							   							   
 							</TABLE>						
 					</div>		
-  			  </div>
+    			<button class="btn" id="jobComp">Job Complete</button>
+  			  </div>  			  
 			</div>
 		<div>	
 	</div>
@@ -85,6 +91,12 @@
 							      <TD>5:45pm</TD>
 							      <TD><button id="button2">Images</button></TD>
 							   </TR>
+							   <TR>
+							      <TD id="vegasStrip2"></TD>
+							      <TD></TD>
+							      <TD></TD>
+							      <TD><button id="button3">Images</button></TD>
+							   </TR>							   
 							</TABLE>
 						</div>
 					</div>	    			
@@ -109,7 +121,12 @@
 						<img src="http://i.imgur.com/X0gsu4v.jpg">
 						<img src="http://i.imgur.com/BXIq4Y5.jpg">
   			    	</div>
-  			    </div>			    
+  			    </div>
+  			    <div class="row">
+  			    	<div class="col-xs-2">
+  			    		<button class="btn" id="hideBtn">Hide</button>  			    		    
+  			  		</div>
+  			  	</div>  			    			    
   			  </div>
 			</div>
 		<div>	
@@ -123,13 +140,18 @@
 			  <div class="panel-body">
 			  	<div class="row">
 			  		<div class="col-xs-12">
-						<img src="http://i.imgur.com/znbdZse.jpg">
-						<img src="http://i.imgur.com/xxsK6Ch.jpg">
+						<img src="http://i.imgur.com/O0rnGrb.jpg">
+						<img src="http://i.imgur.com/8E8rj8S.jpg">
 						<img src="http://i.imgur.com/airy542.jpg">
 						<img src="http://i.imgur.com/X0gsu4v.jpg">
 						<img src="http://i.imgur.com/BXIq4Y5.jpg">
   			    	</div>
-  			    </div>			    
+  			    </div>	
+  			    <div class="row">
+  			    	<div class="col-xs-2">
+  			    		<button class="btn" id="hideBtn2">Hide</button>  			    		    
+  			  		</div>
+  			  	</div>
   			  </div>
 			</div>
 		<div>	
