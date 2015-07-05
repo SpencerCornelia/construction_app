@@ -1,10 +1,10 @@
 <ul class="nav nav-tabs">
   <li role="presentation" class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-      Current Job <span class="caret"></span>
+      Current Jobs <span class="caret"></span>
     </a>
     <ul class="dropdown-menu">
-      <a href="#pastJobs">Spencer</a>
+      <a href="#vegasStrip">Vegas Strip</a>
     </ul>
   </li>
   <li role="presentation" class="dropdown">
@@ -12,7 +12,14 @@
       Past Jobs <span class="caret"></span>
     </a>
     <ul class="dropdown-menu">
-      <a href="#pastJobs">Spencer</a>
+      <a href="#scHouse">Cornelia's House</a>
     </ul>
-  </li>  
+  </li> 
+  <li role="presentation">
+    <ul class="nav nav-pills">
+    <% if current_user %>  
+    <li role="presentation"><%= link_to "Log Out", user_logout_path %></li>
+    <% end %>
+    </ul>
+  </li>
 </ul>

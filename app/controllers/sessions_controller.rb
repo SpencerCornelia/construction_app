@@ -18,4 +18,10 @@ class SessionsController < ApplicationController
 	def show
 		render :show
 	end
+
+    def destroy
+    	logout
+    	set_cache_buster
+    	redirect_to root_path
+    end
 end
