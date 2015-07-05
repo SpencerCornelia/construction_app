@@ -18,7 +18,16 @@
 //= require gmaps/google
 //= require_tree .
 
-
+window.onload = function(){
+	$("#allPictures1").hide();
+	$("#allPictures2").hide();
+	$("#button1").on("click", function() {
+		$("#allPictures1").show();
+	});
+	$("#button2").on("click", function() {
+		alert("hi")
+	});
+};
 
 
 
